@@ -13,7 +13,7 @@ const keysDataBase = require('../database/keys')
 const customerRoutes = require('./routes/customer')
 
 //Settings
-app.set('port', process.env.PORT || 3000)
+app.set('port', process.env.PORT || 8080)
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views')) //archivos de vista
 
