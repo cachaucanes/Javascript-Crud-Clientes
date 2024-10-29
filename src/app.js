@@ -19,7 +19,6 @@ app.set('views', path.join(__dirname, 'views')) //archivos de vista
 
 //middlewares
 app.use(morgan('dev'))
-console.log(keysDataBase, 'settings database ');
 
 //esta agregando al req un metodo llamado getConnection()
 app.use(myConnection(mysql, keysDataBase, 'pool'))
