@@ -23,4 +23,5 @@ You can visit the live version of the app here:
 ### Hosting database (free)
 [Clever Cloud]https://console.clever-cloud.com/
 
-![Clientes](https://user-images.githubusercontent.com/29615549/62988078-95938680-be08-11e9-92cd-ca2eb1121bc6.jpg)
+![PeopleTrack](https://github.com/user-attachments/assets/5240b7a8-c7fd-4686-b1d1-c3568c64145a)
+
