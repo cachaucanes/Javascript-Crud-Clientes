@@ -3,7 +3,7 @@ const mysql = require('mysql')
 const myConnection = require('express-myconnection')
 const path = require('path')
 const morgan = require('morgan')
-require('dotenv').config()
+/* require('dotenv').config() */ /* Activar solo en local */
 
 const app = express()
 
