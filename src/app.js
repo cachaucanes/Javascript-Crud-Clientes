@@ -1,5 +1,5 @@
 const express = require('express')
-const mysql = require('mysql')
+const mysql = require('mysql2')
 const myConnection = require('express-myconnection')
 const path = require('path')
 const morgan = require('morgan')
