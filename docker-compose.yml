@@ -3,8 +3,12 @@ services:
     build: .
     ports:
       - "8080:8080"
-    env_file:
-      - .env
+    environment:
+      MYSQL_ADDON_HOST: ${MYSQL_ADDON_HOST}
+      MYSQL_ADDON_USER: ${MYSQL_ADDON_USER}
+      MYSQL_ADDON_PASSWORD: ${MYSQL_ADDON_PASSWORD}
+      MYSQL_ADDON_PORT: ${MYSQL_ADDON_PORT}
+      MYSQL_ADDON_DB: ${MYSQL_ADDON_DB}
     depends_on:
       db:
         condition: service_healthy
@@ -13,8 +17,8 @@ services:
   db:
     image: mysql:8
     environment:
-      MYSQL_ROOT_PASSWORD: secret
-      MYSQL_DATABASE: crud_clientes
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ADDON_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_ADDON_DB}
     volumes:
       - mysql_data:/var/lib/mysql
       - ./database:/docker-entrypoint-initdb.d
