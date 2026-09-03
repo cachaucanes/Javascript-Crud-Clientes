@@ -13,7 +13,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "ejs": "^5.0.2",
-    "express": "^4.17.1",
+    "express": "^5.2.1",
     "express-myconnection": "^1.0.4",
     "morgan": "^1.9.1",
     "mysql2": "^3.22.3"
